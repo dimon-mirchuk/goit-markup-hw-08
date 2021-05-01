@@ -1,0 +1,44 @@
+.navigation,
+.navigation__list {
+  @extend %flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  @extend %flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $heading-color;
+
+  transition: color $duration $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.navigation__current-page {
+  position: relative;
+  color: $accent;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid $accent;
+    border-radius: 2px;
+  }
+}

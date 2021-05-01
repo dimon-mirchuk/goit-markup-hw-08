@@ -1,0 +1,22 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &__web {
+    color: $accent;
+  }
+
+  &--color-black {
+    color: $black-color;
+  }
+  &--color-white {
+    color: $white-color;
+  }
+
+  .footer & {
+    color: $white-color;
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  @extend %flex;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header-contact-list {
+  margin-left: auto;
+  @extend %flex;
+}
+
+.header-contact-list__item + .header-contact-list__item {
+  margin-left: 50px;
+}
+
+.header-contact-list__link {
+  @extend %flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $duration $cubic-bezier;
+
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.header-contact-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  transition: fill $duration $cubic-bezier;
+}

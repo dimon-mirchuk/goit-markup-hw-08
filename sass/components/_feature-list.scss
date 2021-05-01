@@ -1,0 +1,25 @@
+.feature__list {
+  display: flex;
+  margin: -15px;
+}
+
+.feature__item {
+  width: 270px;
+  margin: 15px;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $heading-color;
+}
+
+.feature__icon {
+  height: 120px;
+  margin-bottom: 30px;
+  @extend %flex;
+  justify-content: center;
+  background-color: $background-grey;
+}
