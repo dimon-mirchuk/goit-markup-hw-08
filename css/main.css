@@ -48,6 +48,8 @@ img {
 }
 
 button {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   cursor: pointer;
   background-color: inherit;
@@ -123,5 +125,54 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  position: relative;
+}
+
+.mobile-menu__container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu__container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__container {
+    display: flex;
+  }
+}
+
+.mobile-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__icon-close {
+  display: none;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon-close {
+  display: block;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon-open {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
