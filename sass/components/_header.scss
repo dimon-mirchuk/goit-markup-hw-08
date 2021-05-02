@@ -3,7 +3,18 @@
 }
 
 .header__container {
-  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.navigation__list {
+  @media screen and (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.header-contact-list {
+  @media screen and (max-width: $mobile-max) {
+    display: none;
+  }
 }
