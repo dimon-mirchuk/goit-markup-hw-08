@@ -77,7 +77,7 @@
           </li>
         </ul>
         <div
-          class="mobile-menu__container is-open"
+          class="mobile-menu__container"
           id="mobile-menu-container"
           data-menu
         >
@@ -127,7 +127,6 @@
             </li>
             <li class="mobile-menu__social-link-list-item">
               <a href="#" class="mobile-menu__social-link"> LinkedIn </a>
-              <span class="mobile-menu__social-link-separator">|</span>
             </li>
           </ul>
         </div>
@@ -139,7 +138,12 @@
         aria-controls="mobile-menu-container"
         data-menu-button
       >
-        <svg aria-label="мобильное меню" width="40px" height="40px">
+        <svg
+          class="mobile-menu__icon"
+          aria-label="мобильное меню"
+          width="40px"
+          height="40px"
+        >
           <use
             class="mobile-menu__icon-open"
             href="./images/icons.svg#mobile-menu"
