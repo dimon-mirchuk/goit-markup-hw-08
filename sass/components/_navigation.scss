@@ -40,13 +40,15 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    border: 2px solid $accent;
-    border-radius: 2px;
+  @media screen and (min-width: $tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      border: 2px solid $accent;
+      border-radius: 2px;
+    }
   }
 }
