@@ -411,11 +411,40 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="our-team__list list">
             <li class="our-team__item">
-              <img
+              <picture class="our-team__photo">
+                <source
+                  srcset="
+                    ./images/our-team/photo1-270.webp 270w,
+                    ./images/our-team/photo1-354.webp 354w,
+                    ./images/our-team/photo1-450.webp 450w,
+                    ./images/our-team/photo1-540.webp 540w,
+                    ./images/our-team/photo1-708.webp 708w,
+                    ./images/our-team/photo1-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/photo1-270.jpg 270w,
+                    ./images/our-team/photo1-354.jpg 354w,
+                    ./images/our-team/photo1-450.jpg 450w,
+                    ./images/our-team/photo1-540.jpg 540w,
+                    ./images/our-team/photo1-708.jpg 708w,
+                    ./images/our-team/photo1-900.jpg 900w
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width:
+                450px) 450px, (min-width: 354px) 354px, (min-width: 270px)
+                270px, 100vw"
+                  src="./images/our-team/photo1-270.jpg"
+                  alt="Фото Игоря Демьяненко"
+                />
+              </picture>
+              <!-- <img
                 src="./images/photo1.jpg"
                 alt="Фото Игоря Демьяненко"
                 width="270"
-              />
+              /> -->
               <div class="our-team__member-description">
                 <h3 class="our-team__member-name">Игорь Демьяненко</h3>
                 <p class="our-team__member-position">Product Designer</p>
