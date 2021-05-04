@@ -14,7 +14,10 @@
     url(../images/hero/main-bg-mobile.jpg);
   background-size: cover;
 }
-@media (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -34,7 +37,10 @@
       ),
       url(../images/hero/main-bg-tablet.jpg);
   }
-  @media (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           to right,
@@ -57,7 +63,10 @@
       ),
       url(../images/hero/main-bg-desktop.jpg);
   }
-  @media (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           to right,
