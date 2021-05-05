@@ -26,7 +26,11 @@
 .our-team__social-links {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.our-team__social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-link {
