@@ -8,7 +8,7 @@
 .regular-clients__item {
   margin: 15px;
 
-  @media screen and (max-width: $mobile-max) {
+  @media screen and (max-width: $tablet) {
     width: calc((100% - 2 * 30px) / 2);
   }
   @media screen and (min-width: $tablet) {

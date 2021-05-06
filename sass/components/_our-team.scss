@@ -21,7 +21,7 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    @media screen and (max-width: $mobile-max) {
+    @media screen and (max-width: $tablet) {
       margin-bottom: 30px;
     }
   }
