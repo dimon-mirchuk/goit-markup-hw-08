@@ -46,8 +46,10 @@
       position: absolute;
       right: 0;
       bottom: 0;
+      display: flex;
       width: 100%;
-      border: 2px solid $accent;
+      height: 4px;
+      background-color: $accent;
       border-radius: 2px;
     }
   }
