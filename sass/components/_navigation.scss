@@ -6,7 +6,7 @@
   margin-left: auto;
   @extend %flex;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $mobile-max) {
     display: none;
   }
 }
